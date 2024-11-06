@@ -4,7 +4,7 @@ using namespace std;
 
 
 int main() {
-    Queue data;
+    Queue<string> data;
 
     data.add("One");
     data.add("Two");

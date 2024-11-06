@@ -7,7 +7,7 @@ class Queue {
     public:
         Queue(); //Constructs an empty queue
         //~Queue(); //Destructor to free up memory
-        type isEmpty(); //Returns true if the stack is empty
+        bool isEmpty(); //Returns true if the stack is empty
         void add(type data); //Adds an item to the end of the queue
         void remove(); // Removes the item at the front of the queue
         type peek(type); // Returns the value in the front of the queue (without removing)
@@ -25,7 +25,7 @@ Queue<type>::Queue() {
 }
 
 template<class type>
-type Queue<type>::isEmpty() {
+bool Queue<type>::isEmpty() {
     if (length > 0) {
         return false;
     } else {
